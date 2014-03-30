@@ -1,5 +1,7 @@
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu:13.04
+
+RUN apt-get install -y wget
 
 # Install Node.js
 RUN wget http://nodejs.org/dist/v0.10.26/node-v0.10.26-linux-x64.tar.gz
